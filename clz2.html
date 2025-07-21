@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>finding greatest number</h1>
+    <input type="text" id="userinput" placeholder="eg.1,2,3,4,5"> 
+    <button onclick="processarray()">greatest no.</button>
+    <p id="array"></p>
+    <p id="sum"></p>
+    <script>
+        function processarray(){
+            const input=document.getElementById("userinput").value;
+            let myarr=input.split(",").map(num=> parseFloat(num.trim()));
+            
+            document.getElementById("array").textContent="array:"+myarr.join(".");
+           let max=0;
+            for (let i = 0; i < myarr.length; i++) {
+                if (myarr[i]>max){
+                    max=myarr[i]
+                }
+                
+            }
+            
+            document.getElementById("sum").textContent="greatest number:"+max;
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>finding longest String</h1>
+    <input type="text" id="userinput" placeholder="eg.adc cdr gte"> 
+    <button onclick="processarray()">greatest no.</button>
+    <p id="array"></p>
+    <p id="max"></p>
+    <script>
+        function processarray(){
+            const input=document.getElementById("userinput").value;
+            let myarr=input.split(" ").map(String);
+            
+            document.getElementById("array").textContent="sentence :"+ myarr;
+           let longest=myarr[0];
+            for (let i = 0; i < myarr.length-1; i++) {
+                if (myarr[i+1].length > longest.length){
+                    longest=myarr[i+1]
+                }
+                
+            }
+            let words="";
+            for (let i = 0; i < array.length; i++) {
+                if(myarr[i].length==long)
+            {
+                let word=words +myarr[i]
+            } 
+            }
+            document.getElementById("max").textContent="longest word:"+longest;
+        }
+    </script>
+</body>
+</html>
